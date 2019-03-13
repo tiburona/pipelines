@@ -1,0 +1,58 @@
+{
+    "name": "flirt-reg-applyxfm-transfer-command",
+    "label": "flirt",
+    "description": "FSL Flirt registration of atlas to subject space with automatic download of files",
+    "version": "1.0",
+    "schema-version": "1.0",
+    "type": "docker",
+    "info-url": "https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FLIRT/UserGuide",
+    "image": "flirt-reg-applyxfm-transfer:latest",
+    "command-line": "bash container-workflow.sh #project# #subject# #experiment#",
+    "inputs": [
+    {
+      "name": "project",
+      "description": null,
+      "type": "string",
+      "matcher": null,
+      "default-value": null,
+      "required": true,
+      "replacement-key": null,
+      "command-line-flag": null,
+      "command-line-separator": null,
+      "true-value": null,
+      "false-value": null
+    },
+     {
+      "name": "subject",
+      "description": null,
+      "type": "string",
+      "matcher": null,
+      "default-value": null,
+      "required": true,
+      "replacement-key": null,
+      "command-line-flag": null,
+      "command-line-separator": null,
+      "true-value": null,
+      "false-value": null
+    },
+     {
+      "name": "experiment",
+      "description": null,
+      "type": "string",
+      "matcher": null,
+      "default-value": null,
+      "required": true,
+      "replacement-key": null,
+      "command-line-flag": null,
+      "command-line-separator": null,
+      "true-value": null,
+      "false-value": null
+    }
+  ],
+    "xnat": [
+      {
+        "name": "flirt-reg-applyxfm-transfer-wrapper",
+        "description": "register atlas to subject space"
+      }
+    ]
+}
